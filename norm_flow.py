@@ -1,5 +1,3 @@
-from turtle import forward
-from uu import Error
 import torch
 
 
@@ -33,8 +31,6 @@ class NormalizingFlow(torch.nn.Module):
 
     def jacobian(self, func, x):
         jacobian = torch.autograd.functional.jacobian(func, x)
-        # TODO add the decomposition if it's necessary
-
         return torch.det(jacobian)
 
     def tranformation(self, x):
