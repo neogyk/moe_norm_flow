@@ -2,4 +2,4 @@
 
 MoE in the Normalizing Flow Architecture
 
-Soon will be relised
+Soon will be realized
